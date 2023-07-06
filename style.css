@@ -11,15 +11,14 @@ body{
     font-family: "Fraunces" , serif;
     display: flex;
     align-items: center;
-    align-content: center;
-    min-height: 100vh;
-    min-width: 80vh;
+    justify-content: center;
+    height: 100vh;
 }
 
 .card-container{
     background-color:#f2ebe3;
     padding: 60px;
-    max-width: 654px;
+    max-width: 720px;
     min-width: 397px;
 }
 
@@ -78,12 +77,13 @@ body{
 .button{
     background-color: #3c8067;
     color: white;
-    padding: auto;
+    padding: 0.4em 0.6em;
     width: 90%;
     display: flex;
     justify-content: center;
     margin-top: 30px;
     border-radius: 10px;
+    border: none;
 }
 
 .icon{
@@ -94,7 +94,7 @@ body{
     padding: 10px;
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:650px) {
     .card{
         display: flex;
         flex-direction: column;
