@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 12%;
+    background-color:#f2ebe3;
+    font-size: 14px;
+    font-family: "Fraunces" , serif;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    min-width: 80vh;
+}
+
+.card-container{
+    background-color:#f2ebe3;
+    padding: 60px;
+    max-width: 654px;
+    min-width: 397px;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 1%;
+    background-color: white;
+    
+}
+
+.left{
+    width: 50%;
+}
+
+.left img{
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.right{
+    width: 50%;
+    padding: 5%;
+}
+
+.right .heading{
+    margin-bottom: 20px;
+}
+
+.right .heading2{
+    margin-bottom: 20px;
+    font-size: 1.95rem;
+    font-family: Fraunces, serif;
+}
+
+.right .info{
+    margin-bottom: 20px;
+}
+
+.right .price-container{
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.cut_price{
+    margin-left: 25px;
+    font-size: 0.9rem;
+    text-decoration: line-through;
+}
+
+.button{
+    background-color: #3c8067;
+    color: white;
+    padding: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.icon{
+    padding: 10px;
+}
+
+.text{
+    padding: 10px;
+}
+
+@media screen and (max-width:450px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 40%;
+    }
+
+    .right{
+        height: 50%;
+        width: 100%;     
+    }
+    .left img{
+        content: url("./images/image-product-mobile.jpg");
+        border-bottom-left-radius: 0%;
+        border-top-right-radius: 10px;
+    }
+
+    
+
+}
+
+
+
+
+
